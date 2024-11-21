@@ -1,1 +1,20 @@
+<!-- Firebase App (necessário para inicializar o Firebase) -->
+<script src="https://www.gstatic.com/firebasejs/9.25.0/firebase-app.js"></script>
+<!-- Analytics opcional -->
+<script src="https://www.gstatic.com/firebasejs/9.25.0/firebase-analytics.js"></script>
+<script>
+    // Configuração do Firebase (copie do console do Firebase)
+    const firebaseConfig = {
+        apiKey: "API_KEY",
+        authDomain: "PROJECT_ID.firebaseapp.com",
+        projectId: "PROJECT_ID",
+        storageBucket: "PROJECT_ID.appspot.com",
+        messagingSenderId: "SENDER_ID",
+        appId: "APP_ID",
+        measurementId: "G-MEASUREMENT_ID"
+    };
 
+    // Inicializa o Firebase
+    const app = firebase.initializeApp(firebaseConfig);
+    const analytics = firebase.analytics(app);
+</script>
